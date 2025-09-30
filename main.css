@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+}
+
+.header-section {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('./images/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 29px 0;
+}
+
+.title {
+    font-weight: 250;
+    font-size: 18px;
+    color: aliceblue;
+
+    span {
+        color: #B78601;
+    }
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header-content {
+    color: white;
+    margin-top: 166px;
+
+    h2 {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 56px;
+        margin-bottom: 29px;
+    }
+
+    h1 {
+        font-weight: 400;
+        font-size: 60px;
+        margin-bottom: 29px;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+
+    .header-btn {
+        padding: 16px 63px;
+        background: none;
+        border: 2px solid white;
+        border-radius: 50px;
+        color: white;
+        font-size: 20px;
+    }
+
+    .header-btn:hover {
+        background: white;
+        color: black;
+        cursor: pointer;
+        transition: 0.3s all;
+    }
+
+    .header-btn:active {
+        transform: scale(0.95);
+    }
+}
+
+.section-img {
+    margin-top: 100px;
+
+    h1 {
+        font-size: 22px;
+        font-weight: 400;
+    }
+}
+
+.img-block {
+    margin-top: 82px;
+
+    .img-row {
+        display: flex;
+        gap: 30px;
+        text-align: center;
+        justify-items: center;
+        margin-bottom: 29px;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
+
+    .bow {
+        margin-bottom: 67px;
+    }
+}
+
+.review {
+    background-color: #181818;
+    padding-top: 100px;
+    padding-bottom: 89px;
+
+    h1 {
+        font-size: 22px;
+        font-weight: 400;
+        color: white;
+    }
+
+    .rewiew-cards {
+        gap: 30px;
+        display: flex;
+        margin-top: 91px;
+        text-align: center;
+        justify-content: space-between;
+
+
+        .review-card {
+            img {
+                width: 150px;
+                height: 150px;
+            }
+
+            h3 {
+                margin-top: 27px;
+                font-size: 22px;
+                font-weight: 500;
+                color: white;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-top: 24px;
+                font-size: 17px;
+                font-weight: 300;
+                color: white;
+            }
+        }
+    }
+}
+
+.product {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    h1 {
+        font-size: 22px;
+        font-weight: 400;
+    }
+}
+
+.product-cards {
+    gap: 30px;
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+
+    .product-card {
+        background: #181818;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-title {
+            padding: 48px 30px;
+            color: white;
+
+            h3 {
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+
+.agent {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('./images/alesia-kazantceva-283291-unsplash.png');
+    background-size: cover;
+    background-position: center;
+    height: 140vh;
+    flex-direction: column;
+    align-items: center;
+
+    .agent-block {
+        color: white;
+        padding-top: 177px;
+
+        h1 {
+            font-size: 75px;
+            font-weight: 400;
+            margin-bottom: 26px;
+        }
+
+        p {
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 30px;
+            width: 914px;
+        }
+
+        .header-btn {
+            margin-top: 80px;
+            padding: 16px 63px;
+            background: none;
+            border: 2px solid white;
+            border-radius: 50px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .header-btn:hover {
+            background: white;
+            color: black;
+            cursor: pointer;
+            transition: 0.3s all;
+        }
+
+        .header-btn:active {
+            transform: scale(0.95);
+        }
+    }
+}
+
+.footer {
+    background-color: #181818;
+    padding: 92px 0 28px 0;
+
+    .footer-block {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            color: white;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: 300;
+            width: 515px;
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 40px;
+
+            li a{
+                color: white;
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+.footer-text{
+    text-align: center;
+    color: white;
+    margin-top: 36px;
+    font-size: 18px;
+    font-weight: 300;
+}
