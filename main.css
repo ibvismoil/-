@@ -183,6 +183,7 @@
 
     .product-card {
         background: #181818;
+        width: 250px;
 
         img {
             width: 100%;
@@ -255,36 +256,86 @@
 .footer {
     background-color: #181818;
     padding: 92px 0 28px 0;
-
-    .footer-block {
-        display: flex;
-        justify-content: space-between;
-
-        p {
-            color: white;
-            margin-top: 20px;
-            font-size: 18px;
-            font-weight: 300;
-            width: 515px;
-        }
-
-        ul{
-            list-style: none;
-            display: flex;
-            gap: 40px;
-
-            li a{
-                color: white;
-                font-size: 18px;
-                font-weight: 400;
-            }
-        }
-    }
-}
-.footer-text{
-    text-align: center;
     color: white;
-    margin-top: 36px;
+}
+
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    max-width: 500px;
+}
+
+.footer-logo .title {
+    font-size: 22px;
+    color: white;
+}
+
+.footer-logo .text {
+    color: #B78601;
+}
+
+.footer-logo p {
+    margin-top: 15px;
     font-size: 18px;
     font-weight: 300;
+    line-height: 1.6;
+}
+
+.footer-nav {
+    text-align: right;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+.footer-contacts{
+    margin-top: 82px;
+}
+
+.footer-nav li a {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav li a:hover {
+    color: #B78601;
+}
+
+.footer-contacts a,
+.footer-contacts p {
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 8px;
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 25px;
+}
+
+.footer-bottom p {
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+}
+
+.footer-bottom .highlight {
+    color: white;
 }
